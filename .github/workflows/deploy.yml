@@ -74,12 +74,4 @@ jobs:
 
       - name: Deploy 
 
-        run: | 
-
-          az containerapp update \ 
-
-            --name $CONTAINERAPP \ 
-
-            --resource-group $RESOURCE_GROUP \ 
-
-            --image $ACR_NAME.azurecr.io/recipes:${{ github.sha }} 
+        run: az containerapp update --name $CONTAINERAPP --resource-group $RESOURCE_GROUP --image $ACR_NAME.azurecr.io/recipes:${{ github.sha }}
