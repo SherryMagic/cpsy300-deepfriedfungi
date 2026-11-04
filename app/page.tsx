@@ -13,7 +13,7 @@ export default function Home() {
   const q = insights.quality;
 
   return (
-    <main className="mx-auto w-full max-w-6xl flex-1 space-y-8 bg-zinc-50 p-6 text-zinc-900">
+    <main className="mx-auto w-full max-w-6xl flex-1 space-y-8 bg-red-500 p-6 text-zinc-900">
       <header>
         <h1 className="text-3xl font-bold">{title}</h1>
         <p className="text-zinc-600">
